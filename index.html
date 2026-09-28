@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Заявка на комнату</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🏠 Общежитие</h1>
+
+        <p class="subtitle">
+            Система проверки заявки на комнату
+        </p>
+
+        <form id="dormForm">
+
+            <label for="studentId">
+                ID студента
+            </label>
+
+            <input
+                    type="number"
+                    id="studentId"
+                    placeholder="Например: 1001"
+                    required
+            >
+
+
+            <label for="buildingNumber">
+                Номер корпуса
+            </label>
+
+            <input
+                    type="number"
+                    id="buildingNumber"
+                    placeholder="Например: 1"
+                    required
+            >
+
+
+            <label for="roomNumber">
+                Номер комнаты
+            </label>
+
+            <input
+                    type="number"
+                    id="roomNumber"
+                    placeholder="Например: 101"
+                    required
+            >
+
+
+            <button type="submit">
+                Проверить заявку
+            </button>
+
+        </form>
+
+
+        <div id="loading" class="loading hidden">
+            Проверяем данные...
+        </div>
+
+
+        <div id="result" class="result hidden"></div>
+
+
+        <div class="hint">
+
+            <b>Пример успешной заявки:</b>
+
+            <br><br>
+
+            ID студента: <b>1001</b>
+            <br>
+
+            Корпус: <b>1</b>
+            <br>
+
+            Комната: <b>101</b>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
